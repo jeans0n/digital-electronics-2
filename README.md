@@ -1,5 +1,5 @@
 **Digital Electronics 2**
-*(https://www.vut.cz/ "VUT website")*
+(https://www.vut.cz/ "VUT website")
 
 
 Subjects discussed :
