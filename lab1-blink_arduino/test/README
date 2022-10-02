@@ -7,8 +7,14 @@
 ```c
 int main(void)
 {
+     
+    uint8_t led_value = LOW;  // Local variable to keep LED status
+    
     // Set pin where on-board LED is connected as output
+    
     pinMode(LED_GREEN, OUTPUT);
+    pinMode(LED_GREEN, OUTPUT);
+    pinMode(LED_RED, OUTPUT);
 
     // Infinite loop
     while (1)
