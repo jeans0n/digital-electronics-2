@@ -7,24 +7,35 @@
 ```c
 int main(void)
 {
-     
-    uint8_t led_value = LOW;  // Local variable to keep LED status
-    
     // Set pin where on-board LED is connected as output
-    
-    pinMode(LED_GREEN, OUTPUT);
-    pinMode(LED_GREEN, OUTPUT);
+    #define LED_RED   PB0
+    #define PB0 8
+
     pinMode(LED_RED, OUTPUT);
+    digitalWrite(LED_RED, HIGH);
 
     // Infinite loop
     while (1)
     {
-        // Generate a lettre `A` Morse code
+        digitalWrite(LED_RED, LOW);   // The LED is turned on (active LOW)
 
-        // WRITE YOUR CODE HERE
+        _delay_ms(100); // it stays on for 100 ms to represent the dot of the letter A in morse
+
+        digitalWrite(LED_RED, HIGH);  // The LED is now turned off
+
+        _delay_ms(200); // it stays off for 200 ms
+
+        digitalWrite(LED_RED, LOW);   // The LED is turned on again for the second part of the letter A in morse 
+
+        _delay_ms(500); // it stays on for 500 ms this time to represent the dash
+        
+        digitalWrite(LED_RED, HIGH); // The LED is turned off
+        
+
+        _delay_ms(200); // The loop starts again after 200 ms
 
     }
-
+    
     // Will never reach this
     return 0;
 }
