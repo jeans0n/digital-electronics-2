@@ -8,17 +8,47 @@
 int main(void)
 {
     // Set pin where on-board LED is connected as output
+<<<<<<< HEAD
     pinMode(LED_GREEN, OUTPUT);
+=======
+    #define LED_RED   PB0
+    #define PB0 8
+
+    pinMode(LED_RED, OUTPUT);
+    digitalWrite(LED_RED, HIGH);
+>>>>>>> 7240f7749cdd7cc512aadf61a0e714764ab8e059
 
     // Infinite loop
     while (1)
     {
+<<<<<<< HEAD
         // Generate a lettre `A` Morse code
 
         // WRITE YOUR CODE HERE
 
     }
 
+=======
+        digitalWrite(LED_RED, LOW);   // The LED is turned on (active LOW)
+
+        _delay_ms(200); // it stays on for 200 ms to represent the dot of the letter A in morse
+
+        digitalWrite(LED_RED, HIGH);  // The LED is now turned off
+
+        _delay_ms(400); // it stays off for 400 ms
+
+        digitalWrite(LED_RED, LOW);   // The LED is turned on again for the second part of the letter A in morse 
+
+        _delay_ms(1000); // it stays on for 1000 ms this time to represent the dash
+        
+        digitalWrite(LED_RED, HIGH); // The LED is turned off
+        
+
+        _delay_ms(400); // The loop starts again after 400 ms
+
+    }
+    
+>>>>>>> 7240f7749cdd7cc512aadf61a0e714764ab8e059
     // Will never reach this
     return 0;
 }
@@ -26,4 +56,8 @@ int main(void)
 
 2. Scheme of Morse code application, i.e. connection of AVR device, LED, resistor, and supply voltage. The image can be drawn on a computer or by hand. Always name all components and their values!
 
+<<<<<<< HEAD
    ![your figure]()
+=======
+    https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/lab1-blink_arduino/test/Scheme%20of%20Morse%20code%20application.png
+>>>>>>> 7240f7749cdd7cc512aadf61a0e714764ab8e059
