@@ -7,9 +7,9 @@
    | **DDRB** | **PORTB** | **Direction** | **Internal pull-up resistor** | **Description** |
    | :-: | :-: | :-: | :-: | :-- |
    | 0 | 0 | input | no | Tri-state, high-impedance |
-   | 0 | 1 | | | |
-   | 1 | 0 | | | |
-   | 1 | 1 | | | |
+   | 0 | 1 | input | yes | pxn will source current if ext. pulled low |
+   | 1 | 0 | output | no | output low (sink) |
+   | 1 | 1 | output | no | output high (source) |
 
 ### GPIO library
 
@@ -17,8 +17,8 @@
 
    | **Version** | **Size [B]** |
    | :-- | :-: |
-   | Arduino-style     |  |
-   | Registers         |  |
+   | Arduino-style     | 480 |
+   | Registers         | 196 |
    | Library functions |  |
 
 ### Traffic light
