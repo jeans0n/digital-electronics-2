@@ -8,7 +8,7 @@
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
    | Timer/Counter0 | 8  | 16µs | 128µs | -- | 1ms | -- | 4ms | 16ms |
    | Timer/Counter1 | 16 | 4ms | 33ms | -- | 262ms | -- | 1s | 4s |
-   | Timer/Counter2 | 8  | 16µs | 128µs | 51µs | 1ms | 2ms | 4ms | 16ms |
+   | Timer/Counter2 | 8  | 16µs | 128µs | 512µs | 1ms | 2ms | 4ms | 16ms |
 
 ### Interrupts
 
