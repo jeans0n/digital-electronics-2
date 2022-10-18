@@ -1,4 +1,4 @@
-# Lab 3: NOE FORTUNE
+# Lab 3: NOÉ FORTUNE
 
 ### Overflow times
 
