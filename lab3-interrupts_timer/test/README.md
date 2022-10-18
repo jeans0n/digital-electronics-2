@@ -6,9 +6,9 @@
 
    | **Module** | **Number of bits** | **1** | **8** | **32** | **64** | **128** | **256** | **1024** |
    | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-   | Timer/Counter0 | 8  | 16u | 128u | -- | 1024u | -- | 4096u | 16384u |
-   | Timer/Counter1 | 16 | 4,096m | 32,768m | -- | 262,144m | -- | 1,048576 | 4,194304 |
-   | Timer/Counter2 | 8  | 16u | 128u | 512u | 1024u | 2048u | 4096u | 16384u |
+   | Timer/Counter0 | 8  | 16µs | 128µs | -- | 1ms | -- | 4ms | 16ms |
+   | Timer/Counter1 | 16 | 4ms | 33ms | -- | 262ms | -- | 1s | 4s |
+   | Timer/Counter2 | 8  | 16µs | 128µs | 51µs | 1ms | 2ms | 4ms | 16ms |
 
 ### Interrupts
 
