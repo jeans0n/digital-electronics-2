@@ -119,7 +119,7 @@ int main(void)
 ISR(TIMER2_OVF_vect)
 {
     static uint8_t no_of_overflows = 0;
-    static uint8_t no_of_overflows_2 = 0;
+    // static uint8_t no_of_overflows_2 = 0;
     static uint8_t tenths = 0;  // Tenths of a second
     static uint8_t seconds = 0; // Seconds
     char string[2];             // String for converted numbers by itoa()
