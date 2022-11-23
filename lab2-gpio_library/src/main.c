@@ -45,10 +45,10 @@ int main(void)
 {
     uint8_t led_value = 0;  // Local variable to keep LED status
 
-    // // Set pin where on-board LED is connected as output
-    // pinMode(LED_GREEN, OUTPUT);
-    // // Set second pin as output
-    // pinMode(LED_RED, OUTPUT);
+    // Set pin where on-board LED is connected as output
+    pinMode(LED_GREEN, OUTPUT);
+    // Set second pin as output
+    pinMode(LED_RED, OUTPUT);
 
 
     // VERSION 2: low level register style
@@ -65,10 +65,10 @@ int main(void)
     // Infinite loop
     while(1)
       {
-          // // Turn ON/OFF on-board LED ...
-          // digitalWrite(LED_GREEN, led_value);
-          // // ... and external LED as well
-          // digitalWrite(LED_RED, led_value);
+          // Turn ON/OFF on-board LED ...
+          digitalWrite(LED_GREEN, led_value);
+          // ... and external LED as well
+          digitalWrite(LED_RED, led_value);
 
           // Pause several milliseconds
           _delay_ms(SHORT_DELAY);
