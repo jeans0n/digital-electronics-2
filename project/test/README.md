@@ -4,7 +4,9 @@
 
 Display the position of the joystick with characters on the screen.
 
-The choice of the character is made with the rotary encoder.
+The choice of character is made with the rotary encoder. By turning the rotary encoder, a list of characters is scrolled in one direction or the other depending on the direction of rotation applied.
+
+The position of the joystick in each of the two directions is determined by two analog measurements operated by 2 ADC channels.
 
 Each of the two channels is represented on a line of the screen, line 0 : X, line 1 : Y.
 
