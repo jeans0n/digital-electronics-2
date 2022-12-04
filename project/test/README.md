@@ -365,8 +365,7 @@ R = 4
 
 ## Schematics
 
-
-
+![schematic](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/schematic.jpg)
 
 ## Flowcharts
 
