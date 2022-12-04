@@ -657,4 +657,4 @@ Here are the different steps to follow:
 
 <img src="wokwi-load-hex.png" width="635" height="412">
 
-<img src="demo.png" width="457" height="572">
+<img src="screenshot.png" width="457" height="572">
