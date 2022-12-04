@@ -132,7 +132,7 @@ uint16_t get_mask_from_adc(uint16_t adc_value) {
     if(adc_value < 751) { return 0x0780; }
     if(adc_value < 820) { return 0x0F80; }
     if(adc_value < 888) { return 0x1F80; }
-    if(adc_value < 956) { return 0x7F80; }
+    if(adc_value < 956) { return 0x3F80; }
     return 0x7F80;
 }
 
