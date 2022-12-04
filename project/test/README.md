@@ -644,14 +644,14 @@ The loading of the ``firmware.hex`` file allows the direct execution in the brow
 
 To overcome a limitation of the proposed joystick (not linear) we have replaced it during our tests by two linear potentiometers.
 
-Here is the design we did: https://wokwi.com/projects/xxxxxxxxxxxxxxxxx
+Here is the design we did: [https://wokwi.com/projects/xxxxxxxxxxxxxxxxx](https://wokwi.com/projects/350154241019478612)
 
 # Online simulation and demonstration
 
 The work done is fully testable online at wowki.com.
 
 Here are the different steps to follow:
-- open the page https://wokwi.com/projects/xxxxxxxxxxxxxxxxx
+- open the page [https://wokwi.com/projects/xxxxxxxxxxxxxxxxx](https://wokwi.com/projects/350154241019478612)
 - load the file [firmware.hex](firmware.hex) after pressing "F1" when the cursor is placed in the editor on the left of the screen.
 - press the "play" button.
 
