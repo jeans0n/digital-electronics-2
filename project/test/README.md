@@ -374,66 +374,6 @@ R = 4
 ![get_mask_from_adc](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/get_mask_from_adc.png)
 ![ADC_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/ADC_vect_flowchart.png)
 
-## Code
-
-Global variables: 
-
-
-```
-volatile uint8_t adc1_measure_available[2];
-[...]
-```
-
-
-Utility functions:
-
-
-```
-[...]
-```
-
-
-Startup and main loop:
-
-
-```
-[...]
-
-while (1)
-{
-	// wait for both measures available
-	if(adc_measure_available[ADC0] && adc_measure_available[ADC1]) 
-	{
-		[...]
-	}
-}
-```
-
-
-Timer interrupt service
-
-
-```
-// Timer/Counter1 overflow interrupt
-// Use single conversion mode and start conversion every 33 ms.
-ISR(TIMER1_OVF_vect)
-{
-	[...]
-}
-```
-
-
-ADC interrupt service (called once per channel)
-
-
-```
-// Analog to digital end of conversion Interrupt Service Routine.
-ISR(ADC_vect) {
-	[...]
-}
-```
-
-
 
 ## ADC value to pattern display table 
 
@@ -705,3 +645,16 @@ The loading of the ``firmware.hex`` file allows the direct execution in the brow
 To overcome a limitation of the proposed joystick (not linear) we have replaced it during our tests by two linear potentiometers.
 
 Here is the design we did: https://wokwi.com/projects/xxxxxxxxxxxxxxxxx
+
+# Online simulation and demonstration
+
+The work done is fully testable online at wowki.com.
+
+Here are the different steps to follow:
+- open the page https://wokwi.com/projects/xxxxxxxxxxxxxxxxx
+- load the file [firmware.hex](firmware.hex) after pressing "F1" when the cursor is placed in the editor on the left of the screen.
+- press the "play" button.
+
+<img src="wokwi-load-hex.png" width="635" height="412">
+
+<img src="demo.png" width="457" height="572">
