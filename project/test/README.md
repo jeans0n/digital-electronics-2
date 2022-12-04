@@ -365,7 +365,11 @@ R = 4
 
 ## Schematics
 
-![Screenshot](schematic.png)
+![main](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/main_flowchart.png)
+![display_bars](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/display_bars_flowchart.png)
+![get_mask_from_adc](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/get_mask_from_adc.png)
+![ADC_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/ADC_vect.png)
+
 
 ## Flowcharts
 
