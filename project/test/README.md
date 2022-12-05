@@ -394,11 +394,11 @@ Flowchart of interrupt service routine on TIMER1_OVF_vect:
 
 Flowchart of interrupt service routine on INT0_vect:
 
-![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT0_vect_flowchart.png)
+![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT0_vect.png)
 
 Flowchart of interrupt service routine on INT1_vect:
 
-![INT1_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT1_vect_flowchart.png)
+![INT1_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT1_vect.png)
 
 
 
