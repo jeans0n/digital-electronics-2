@@ -371,10 +371,20 @@ R = 4
 
 ## Flowcharts
 
+
+Flowchart of main function:
 ![main](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/main_flowchart.png)
+Flowchart of display_bars function:
 ![display_bars](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/display_bars_flowchart.png)
+Flowchart of get_mask_from_adc function
 ![get_mask_from_adc](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/get_mask_from_adc.png)
+Flowchart of interrupt service routine on ADC_vect:
 ![ADC_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/ADC_vect_flowchart.png)
+Flowchart of interrupt service routine on INT0_vect:
+![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT0_vect_flowchart.png)
+Flowchart of interrupt service routine on INT1_vect:
+![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT1_vect_flowchart.png)
+
 
 
 ## ADC value to pattern display table 
@@ -636,24 +646,13 @@ The best answer to this problem would be to add hardware processing to make the 
 
 It is also possible to filter the signal through the software, but this requires a development effort that was beyond the time allowed for this project, especially to access the hardware.
 
-## Limited time to access the hardware
-
-We developed most of our software with the help of an amazing online Arduino simulator : https://wokwi.com/.
-
-The Arduino Uno, the 2x16 LCD screen, the rotary encoder and the joystick are directly available.
-
-The loading of the ``firmware.hex`` file allows the direct execution in the browser of the Arduino program.
-
-To overcome a limitation of the proposed joystick (not linear) we have replaced it during our tests by two linear potentiometers.
-
-Here is the design we did: [https://wokwi.com/projects/350154241019478612](https://wokwi.com/projects/350154241019478612)
-
 # Online simulation and demonstration
 
-The work done is fully testable online at wowki.com.
+The work done is fully testable online at wowki.com, a simuator which we used to test our program during the development.
 
 Here are the different steps to follow:
 - open the page [https://wokwi.com/projects/350154241019478612](https://wokwi.com/projects/350154241019478612)
+  or  [https://wokwi.com/projects/349521167663497812](https://wokwi.com/projects/349521167663497812) where we replaced the proposed joystick by two linear potentiometers to overcome its limitations. 
 - load the file [firmware.hex](firmware.hex) after pressing "F1" when the cursor is placed in the editor on the left of the screen.
 - press the "play" button.
 
