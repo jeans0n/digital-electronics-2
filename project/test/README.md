@@ -380,7 +380,7 @@ Flowchart of display_bars function:
 
 ![display_bars](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/display_bars_flowchart.png)
 
-Flowchart of get_mask_from_adc function
+Flowchart of get_mask_from_adc function:
 
 ![get_mask_from_adc](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/get_mask_from_adc.png)
 
@@ -388,13 +388,17 @@ Flowchart of interrupt service routine on ADC_vect:
 
 ![ADC_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/ADC_vect_flowchart.png)
 
+Flowchart of interrupt service routine on TIMER1_OVF_vect:
+
+![TIMER1_OVF_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/TIMER1_OVF_vect.png)
+
 Flowchart of interrupt service routine on INT0_vect:
 
 ![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT0_vect_flowchart.png)
 
 Flowchart of interrupt service routine on INT1_vect:
 
-![INT0_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT1_vect_flowchart.png)
+![INT1_vect](https://raw.githubusercontent.com/jeans0n/digital-electronics-2/main/project/test/INT1_vect_flowchart.png)
 
 
 
