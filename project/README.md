@@ -1,4 +1,4 @@
-# Joystick-meter
+# Joystick-meter - Project led by Noé Fortune and Paul Cascarino
 
 # Overall presentation
 
