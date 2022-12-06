@@ -18,6 +18,8 @@ When you push the joystick to the right or up, you increase the number of charac
 
 Conversely, when the joystick is pushed to the left or down, the number of characters displayed before position 7 is increased, up to position 0.
 
+When you press the rotary encoder's switch, you switch to a different mode with which you can change the update speed on the LCD screen.
+
 
 # Examples of rendering
 
@@ -660,6 +662,12 @@ This video shows the phenomenon in detail: https://www.youtube.com/watch?v=iwyAR
 The best answer to this problem would be to add hardware processing to make the signal clean. This page gives a detailed explanation on how to achieve this: https://perhof.wordpress.com/2012/11/01/using-rotary-encoders-with-arduino/.
 
 It is also possible to filter the signal through the software, but this requires a development effort that was beyond the time allowed for this project, especially to access the hardware.
+
+
+# Videos
+
+1/2: [https://www.youtube.com/shorts/JRLk4Ib_5gE](https://www.youtube.com/shorts/JRLk4Ib_5gE)
+2/2: [https://www.youtube.com/shorts/cbP7iCP0t4g](https://www.youtube.com/shorts/cbP7iCP0t4g)
 
 # Online simulation and demonstration
 
