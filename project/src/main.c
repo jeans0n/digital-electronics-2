@@ -1,10 +1,11 @@
 /***********************************************************************
  *
- * Use USART unit and transmit data between ATmega328P and computer.
+ * Joystick-meter project
  *
- * ATmega328P (Arduino Uno), 16 MHz, PlatformIO
+ * ATmega328P (Arduino Uno), 16 MHz, PlatformIO, Analog Joystick,
+ * Rotary encoder, LCD screen
  *
- * Copyright (c) 2018 Tomas Fryza
+ * Copyright (c) 2022 Noé Fortune, Paul Cascarino
  * Dept. of Radio Electronics, Brno University of Technology, Czechia
  * This work is licensed under the terms of the MIT license.
  *
@@ -200,7 +201,7 @@ int main(void)
     while (1)
     {
         // the bar display is updated with each new acquisition
-        // only the bar whose new value has been read is updated
+        // only when both ADC values have been read
         if (adc_measure_available[ADC0] && adc_measure_available[ADC1])
         {
             mask = get_mask_from_adc(val_adc[ADC0]);
@@ -232,9 +233,10 @@ ISR(TIMER1_OVF_vect)
 }
 
 /**********************************************************************
- * Function: Conversion complete interrupt interrupt
+ * Function: Conversion complete interrupt
  * Purpose:  Read the ADC result and set a flag to indicate it is
  *           available.
+ *           An overflow mechanism allow to adjust the sampling rate.
  **********************************************************************/
 ISR(ADC_vect)
 {
@@ -254,6 +256,12 @@ ISR(ADC_vect)
     adc_measure_available[current_adc_channel] = true;
 }
 
+
+/**********************************************************************
+ * Function: Rotary Encoder Clock interrupt (Rising Edge) 
+ * Purpose:  Depending on the current mode, update the symbol displayed
+ *           or the sampling rate
+ **********************************************************************/
 ISR (INT0_vect) 
 {
     int8_t v;
@@ -273,6 +281,10 @@ ISR (INT0_vect)
     }
 }
 
+/**********************************************************************
+ * Function: Rotary Encoder Switch interrupt (Falling edge) 
+ * Purpose:  Toggle rotary mode.
+ **********************************************************************/
 ISR (INT1_vect) 
 {
     rotary_mode = rotary_mode ? 0 : 1;
