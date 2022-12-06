@@ -666,6 +666,9 @@ It is also possible to filter the signal through the software, but this requires
 
 # Videos
 
+The first video shows how the joystick-meter works.
+The second video shows the sampling rate adjustment.
+
 1/2: [https://www.youtube.com/shorts/JRLk4Ib_5gE](https://www.youtube.com/shorts/JRLk4Ib_5gE)
 
 2/2: [https://www.youtube.com/shorts/cbP7iCP0t4g](https://www.youtube.com/shorts/cbP7iCP0t4g)
