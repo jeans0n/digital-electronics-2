@@ -20,6 +20,9 @@ Conversely, when the joystick is pushed to the left or down, the number of chara
 
 Note: pressing the rotary encoder switch toggles the rotary encoder action from symbol selection to analog signal sampling rate adjustment (in 33 ms steps).
 
+# Responsabilities
+
+The work was done in collaboration with the two project leaders.
 
 # Examples of rendering
 
