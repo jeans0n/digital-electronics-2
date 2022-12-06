@@ -2,7 +2,7 @@
 
 # Overall presentation
 
-Display the position of the joystick with characters on the screen.
+The goal of this project is to display the position of a joystick with characters on an LCD screen.
 
 The choice of character is made with the rotary encoder. By turning the rotary encoder, a list of characters is scrolled in one direction or the other depending on the direction of rotation applied.
 
